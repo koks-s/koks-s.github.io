@@ -1,0 +1,348 @@
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моє Резюме - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background-color: #2c3e50;
+            padding: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px 30px;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #34495e;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* Header with Avatar */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #2c3e50;
+        }
+
+        .avatar {
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 5px solid #2c3e50;
+        }
+
+        .avatar img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 4px solid #3498db;
+            padding-left: 15px;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+        }
+
+        /* Section styling */
+        section {
+            margin-bottom: 30px;
+        }
+
+        /* Ordered List - Education */
+        .education-list {
+            list-style-type: decimal;
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        .education-list li {
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+
+        .education-list li strong {
+            color: #2c3e50;
+        }
+
+        /* Unordered List - Skills */
+        .skills-list {
+            list-style-type: disc;
+            margin-left: 30px;
+            column-count: 2;
+            margin-bottom: 20px;
+        }
+
+        .skills-list li {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        /* Nested Lists - Experience */
+        .experience-list {
+            list-style-type: none;
+            margin-left: 0;
+        }
+
+        .experience-list > li {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-left: 4px solid #3498db;
+        }
+
+        .experience-list > li > strong {
+            display: block;
+            font-size: 1.1em;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .experience-list ul {
+            list-style-type: circle;
+            margin-left: 30px;
+            margin-top: 10px;
+        }
+
+        .experience-list ul li {
+            margin-bottom: 5px;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        /* HTML Entities Section */
+        .entities-section {
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+
+        .entities-section h3 {
+            color: #856404;
+            margin-bottom: 15px;
+        }
+
+        .entities-section p {
+            margin-bottom: 10px;
+            font-family: 'Courier New', monospace;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .btn:hover {
+            background-color: #34495e;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Horizontal Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#portfolio">Портфоліо</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header" id="home">
+            <div class="avatar">
+                <img src="https://i.postimg.cc/TY4LXJSR/koks.jpg" alt="Фото профілю">
+            </div>
+            <h1>Курій Сергій</h1>
+            <p class="subtitle">Web-розробник | Front-end Developer</p>
+        </header>
+
+        <!-- About Section -->
+        <section>
+            <h2>Про мене</h2>
+            <p>Я досвідчений веб-розробник з пристрастю до створення сучасних та функціональних веб-додатків. Маю понад 3 роки досвіду роботи з HTML, CSS, JavaScript та сучасними фреймворками.</p>
+        </section>
+
+        <!-- Education Section - Ordered List -->
+        <section>
+            <h2>Освіта</h2>
+            <ol class="education-list">
+                <li>
+                    <strong>Національний технічний університет України "КПІ"</strong><br>
+                    Бакалавр комп'ютерних наук, 2018-2022
+                </li>
+                <li>
+                    <strong>Магістратура - Програмна інженерія</strong><br>
+                    Національний технічний університет України "КПІ", 2022-2024
+                </li>
+                <li>
+                    <strong>Курси Front-end розробки</strong><br>
+                    IT School, 2023
+                </li>
+            </ol>
+        </section>
+
+        <!-- Skills Section - Unordered List -->
+        <section>
+            <h2>Навички</h2>
+            <ul class="skills-list">
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React.js</li>
+                <li>Vue.js</li>
+                <li>Node.js</li>
+                <li>Git & GitHub</li>
+                <li>Responsive Design</li>
+                <li>REST API</li>
+                <li>TypeScript</li>
+                <li>SASS/SCSS</li>
+            </ul>
+        </section>
+
+        <!-- Experience Section - Nested List -->
+        <section id="portfolio">
+            <h2>Досвід роботи</h2>
+            <ul class="experience-list">
+                <li>
+                    <strong>Senior Front-end Developer - TechCompany Ltd (2023-теперішній час)</strong>
+                    <p>Розробка та підтримка корпоративних веб-додатків</p>
+                    <ul>
+                        <li>Розробка SPA за допомогою React.js</li>
+                        <li>Оптимізація продуктивності веб-додатків</li>
+                        <li>Код-рев'ю та менторство молодших розробників</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Front-end Developer - WebStudio (2021-2023)</strong>
+                    <p>Створення веб-сайтів для клієнтів</p>
+                    <ul>
+                        <li>Верстка адаптивних веб-сайтів</li>
+                        <li>Інтеграція з backend API</li>
+                        <li>Робота з системами контролю версій</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacts">
+            <h2>Контактна інформація</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> koks-s@ukr.net</p>
+                <p><strong>Телефон:</strong> +380 68 469 32 20</p>
+                <p><strong>GitHub:</strong> github.com/koks</p>
+                <p><strong>Місто:</strong> Іваго-Франківськ, Україна</p>
+            </div>
+        </section>
+
+        <h2>Портфоліо</h2>
+
+        <a href="https://github.com/koks-s/23/blob/main/index%20(1).html" class="btn">Лабораторна 1</a>
+        <a href="https://github.com/koks-s/pr4/blob/main/Pr42.html" class="btn">Лабораторна 2</a>
+        <a href="https://github.com/koks-s/pr4/blob/main/pr4.html" class="btn">Лабораторна 3</a>
+
+        <!-- HTML Entities Section -->
+        <section class="entities-section">
+            <h3>Приклади HTML Entities (спеціальні символи)</h3>
+            <p>&lt;div&gt; - Відкриваючий тег div (використано &amp;lt; і &amp;gt;)</p>
+            <p>&copy; 2024 - Символ copyright (використано &amp;copy;)</p>
+            <p>&euro; 100 - Символ євро (використано &amp;euro;)</p>
+            <p>5 &times; 5 = 25 - Знак множення (використано &amp;times;)</p>
+            <p>A &rarr; B - Стрілка (використано &amp;rarr;)</p>
+            <p>&quot;Текст у лапках&quot; - Лапки (використано &amp;quot;)</p>
+            <p>&amp; - Амперсанд (використано &amp;amp;)</p>
+            <p>HTML&nbsp;без&nbsp;розривів - Non-breaking space (використано &amp;nbsp;)</p>
+            <p>&hearts; &spades; &clubs; &diams; - Карткові масті</p>
+            <p>&para; - Параграф (використано &amp;para;)</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Курій Сергій. Всі права захищені.</p>
+        <p>Лабораторна робота №2 - HTML & CSS</p>
+    </footer>
+
+</body>
+
+</html>
